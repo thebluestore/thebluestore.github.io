@@ -76,7 +76,7 @@ $(function () {
 
 let flag = true;
 
-document.querySelectorAll(".arabic").forEach((item) => {
+document.querySelectorAll(".english").forEach((item) => {
   item.style.display = "none";
 });
 
@@ -133,10 +133,10 @@ document
   .addEventListener("click", function () {
     flag = !flag;
     if (flag === false) {
-      document.querySelectorAll(".english").forEach((item) => {
+      document.querySelectorAll(".arabic").forEach((item) => {
         item.style.display = "none";
       });
-      document.querySelectorAll(".arabic").forEach((item) => {
+      document.querySelectorAll(".english").forEach((item) => {
         item.style.display = "block";
       });
 
@@ -177,3 +177,13 @@ document
       document.getElementById("the_collapse").setAttribute("dir", "ltr");
     }
   });
+
+second_flag = false;
+function the_brand() {
+  if (second_flag == false) {
+    document.getElementById("the_brand_image").style.display = "none";
+  } else {
+    document.getElementById("the_brand_image").style.display = "block";
+  }
+  second_flag = !second_flag;
+}

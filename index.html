@@ -43,9 +43,9 @@
          <div class="header">
             <div class="container-fluid">
                <nav class="navigation custom-navbar navbar navbar-expand-md navbar-dark" data-spy="affix" data-offset-top="10">
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="the_brand()">
                      <span class="navbar-toggler-icon"></span>
-                 </button>
+                  </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul class="navbar-nav navbar-background" dir = "rtl">
                           <li class="nav-item">
@@ -61,10 +61,10 @@
                               <a class="nav-link arabic arabic_direction" href="#about">من نحن</a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link english" href="#blog">products<span class="sr-only">(current)</span></a>
+                              <a class="nav-link english" href="#products">products<span class="sr-only">(current)</span></a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link arabic arabic_direction" href="#blog">المعروضات<span class="sr-only">(current)</span></a>
+                              <a class="nav-link arabic arabic_direction" href="#products">المنتجات<span class="sr-only">(current)</span></a>
                           </li>
                       </ul>
                       <a class="navbar-brand m-auto" href="#">
@@ -76,30 +76,33 @@
                           <li><a id ="english_button" onclick="makeArabic()" class="nav-link scrollto arabic arabic_direction" href="#">English</a></li>
                           
                           <li class="nav-item">
-                              <a class="nav-link english" href="#gallary">Gallary</a>
+                              <a class="nav-link english" href="#pages">social media</a>
+                          </li>
+
+                          <li class="nav-item" dir = "rtl">
+                           <a class="nav-link arabic arabic_direction" href="#pages" >الصفحات</a>
                           </li>
           
-                        <li class="nav-item d_none login_btn">
-                           <a class="nav-link english" href="#">contact us</a>
-                        </li>
+                          <li class="nav-item">
+                           <a class="nav-link english" href="#contact">Contact</a>
+                          </li>
 
-                        <li class="nav-item" dir = "rtl">
-                           <a class="nav-link arabic arabic_direction" href="#gallary" >المعرض</a>
-                       </li>
-
-                        <li class="nav-item d_none login_btn">
-                           <a class="nav-link arabic arabic_direction" href="#">تواصل معنا</a>
-                        </li>
+                          <li class="nav-item" dir = "rtl">
+                           <a class="nav-link arabic arabic_direction" href="#contact" >للتواصل</a>
+                          </li>
          
                       </ul>
                   </div>
+                  <a class="navbar-brand2" href="#">
+                     <img src="images/the_blue_logo.png" class="brand-img" id = "the_brand_image" alt="">
+                  </a>
               </nav>
          </div>
       </header>
       <!-- end header inner -->
       <!-- end header -->
       <!-- banner -->
-      <section class="banner_main">
+      <section class="banner_main" id = "home">
          <div id="banner1" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                <li data-target="#banner1" data-slide-to="0" class="active"></li>
@@ -111,9 +114,9 @@
                   <div class="container">
                      <div class="carousel-caption">
                         <div class="text-bg">
-                           <h1 class = "english"> <span class="blu">Welcome <br></span>To Our store</h1>
+                           <h1 class = "english"> <span class="blu">Welcome <br></span>To the Blue Sotre</h1>
                            <h1 class = "arabic"> <span class="blu">مرحبا بك <br></span>في متجرنا</h1>
-                           <figure><img src="images/iphones.png" alt="#"/></figure>
+                           <figure><img src="images/iphone2.png" alt="#"/></figure>
                            <a class="read_more english" href="#">Shop Now</a>
                            <a class="read_more arabic" href="#">التسوق</a>
                         </div>
@@ -124,9 +127,11 @@
                   <div class="container">
                      <div class="carousel-caption">
                         <div class="text-bg">
-                           <h1> <span class="blu">Welcome <br></span>To Our store</h1>
-                           <figure><img src="images/s23.png" alt="#"/></figure>
-                           <a class="read_more" href="#">Shop Now</a>
+                           <h1 class = "english"> <span class="blu">Welcome <br></span>To the Blue Store</h1>
+                           <h1 class = "arabic"> <span class="blu">مرحبا بك <br></span>في متجرنا</h1>
+                           <figure><img src="images/iphones.png" alt="#"/></figure>
+                           <a class="read_more english" href="#">Shop Now</a>
+                           <a class="read_more arabic" href="#">التسوق</a>
                         </div>
                      </div>
                   </div>
@@ -153,12 +158,12 @@
       </section>
       <!-- end banner -->
       <!-- about section -->
-      <div class="about">
+      <div class="about" id = "about">
          <div class="container">
             <div class="row d_flex">
                <div class="col-md-5">
                   <div class="about_img">
-                     <figure><img src="images/redemi.jpg" alt="#"/></figure>
+                     <figure><img src="images/about.jpg" alt="#"/></figure>
                   </div>
                </div>
                <div class="col-md-7">
@@ -177,7 +182,7 @@
       </div>
       <!-- about section -->
       <!-- Our  Glasses section -->
-      <div class="glasses">
+      <div class="glasses" id = "products">
          <div class="container">
             <div class="row">
                <div class="col-md-10 offset-md-1">
@@ -251,6 +256,30 @@
                   <div class="glasses_box">
                      <figure><img src="images/earpods.png" alt="#"/></figure>
                      <h3><span class="blu">Apple ear pods</span></h3>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="glasses_box">
+                     <figure><img src="images/lens_protection.jpg" alt="#"/></figure>
+                     <h3><span class="blu">lenses protection</span></h3>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="glasses_box">
+                     <figure><img src="images/anker.jpg" alt="#"/></figure>
+                     <h3><span class="blu">Anker</span></h3>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="glasses_box">
+                     <figure><img src="images/iphone_battreries.png" alt="#"/></figure>
+                     <h3><span class="blu">iphone battreries</span></h3>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="glasses_box">
+                     <figure><img src="images/gift_cards.png" alt="#"/></figure>
+                     <h3><span class="blu">Gift cards</span></h3>
                   </div>
                </div>
                <div class="col-md-12">
@@ -371,7 +400,11 @@
              </div>
 
              <div class="col-lg-6 container22">
-               <form action="/action_page.php">
+               <div class="titlepage">
+                  <h2 class = "english">Contact us</h2>
+                  <h2 class = "arabic arabic_direction">تواصل معنا</h2>
+               </div>
+               <form action="">
                  <input type="text" id="fname" name="firstname" placeholder="Name" class = "english">
                  <input type="text" id="fname" name="firstname" placeholder="الإسم" class = "arabic" dir = "rtl">
                  <input type="text" id="lname" name="lastname" placeholder="Your Email" class = "english">
@@ -387,7 +420,7 @@
       <!-- end contact section -->
       <!--  footer -->
       <footer>
-         <div class="footer">
+         <div class="footer" id = "pages">
             <div class="container">
                <div class="row">
                   <div class="col-md-12">

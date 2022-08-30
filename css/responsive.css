@@ -68,6 +68,9 @@
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+    .the-other-brand {
+        display: block;
+    }
     .text-bg h1 {
         font-size: 48px;
     }
@@ -148,8 +151,8 @@
         padding-top: 6px;
     }
     .navigation.navbar-dark .navbar-toggler-icon {
-        background: url(../images/menu_icon.png);
-        background-repeat: no-repeat;
+        background-color: rgb(28,56,114);
+        border-radius: 5px;
     }
 }
 
@@ -249,8 +252,8 @@
         border: inherit;
     }
     .navigation.navbar-dark .navbar-toggler-icon {
-        background: url(../images/menu_icon.png);
-        background-repeat: no-repeat;
+        background-color: rgb(28,56,114);
+        border-radius: 5px;
     }
 }
 
@@ -265,4 +268,75 @@
     .navigation .navbar-brand {
       display: none !important;
     }
+
+    .navbar-brand2 {
+        display: block;
+        position: absolute; /* or absolute */
+        left: 42%;
+        
+   }
+}
+
+@media (max-width: 688px) {
+
+    .navbar-brand2 {
+        left: 40%;
+        
+   }
+}
+
+@media (max-width: 580px) {
+
+    .navbar-brand2 {
+        left: 39%;
+        
+   }
+}
+
+@media (max-width: 450px) {
+
+    .navbar-brand2 {
+        left: 38%;
+        
+   }
+}
+
+@media (max-width: 380px) {
+
+    .navbar-brand2 {
+        left: 37%;
+        
+   }
+}
+
+@media (max-width: 350px) {
+
+    .navbar-brand2 {
+        left: 35%;
+        
+   }
+}
+
+@media (max-width: 325px) {
+
+    .navbar-brand2 {
+        left: 34%;
+        
+   }
+}
+
+@media (max-width: 310px) {
+
+    .navbar-brand2 {
+        left: 31%;
+        
+   }
+}
+
+@media (max-width: 310px) {
+
+    .navbar-brand2 {
+        left: 28%;
+        
+   }
 }

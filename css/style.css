@@ -335,6 +335,7 @@ button {
      visibility: visible;
      -webkit-transition: all 0.2s linear 0s;
      transition: all 0.2s linear 0s;
+     
      /* position: relative;
      right: 40px; */
    }
@@ -343,7 +344,7 @@ button {
 
 .banner_main {
      background: #f5f6f6;
-     padding: 198px 0px 90px 0px;
+     padding: 198px 0px 0px 0px;
 }
 
 .text-bg {
@@ -464,6 +465,7 @@ button {
 
 .about .about_img {
      margin-left: -40px;
+     border: rgb(28,56,114) solid 2px;
 }
 
 .about .titlepage::before {
@@ -918,4 +920,16 @@ input[type=text], select, textarea {
 .arabic_direction {
   text-align: right;
   direction: ltr;
+}
+
+.the-other-brand {
+     display: none;
+}
+
+.navbar-brand2 {
+     display: none;
+}
+
+.the_map {
+     padding-top: 16px;
 }
