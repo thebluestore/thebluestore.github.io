@@ -824,7 +824,8 @@ ul.location_icon li {
      color: #fff;
      text-align: center;
      padding: 0 40px;
-     margin-bottom: 30px;
+     padding-bottom: 0px !important;
+     margin-bottom: 0px;
 }
 
 ul.location_icon li a {
@@ -933,3 +934,24 @@ input[type=text], select, textarea {
 .the_map {
      padding-top: 16px;
 }
+
+.counter {
+     position: relative;
+     bottom: 28px;
+}
+
+.aligned {
+     text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content: center
+ }
+
+ .Visits_Count {
+     color: white;
+     font-family: 'Poppins', sans-serif;
+     font-size: 15px;
+ }
+ /* span {
+     padding: 10px;
+ } */
