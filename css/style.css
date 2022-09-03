@@ -1024,7 +1024,8 @@ input[type=text], select, textarea {
      }
 
      .the_welcom {
-          margin-top: 38% !important;
+          margin-top: 50%;
+          margin-bottom: 50%;
      }
 
      .read_more {
