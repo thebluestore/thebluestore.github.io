@@ -1024,7 +1024,7 @@ input[type=text], select, textarea {
      }
 
      .the_welcom {
-          margin-top: 150px !important;
+          margin-top: 38% !important;
      }
 
      .read_more {
@@ -1138,8 +1138,17 @@ input[type=text], select, textarea {
      display: none;
      transition: 0.4s;
      font-family: 'Roboto', sans-serif;
+     /* opacity: 0; */
+     /* visibility: hidden; */
+     -webkit-transition: all 0.2s linear 0s;
+     transition: all 0.2s linear 0s;
 }
 
 #the_brand_image2 {
      display: block;
+     opacity: 1;
+     visibility: visible;
+     -webkit-transition: all 0.2s linear 0s;
+     transition: all 0.2s linear 0s;
 }
+
