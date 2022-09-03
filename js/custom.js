@@ -200,7 +200,7 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
     document.getElementById("the_brand_image2").style.display = "none";
     document.getElementById("the_brand_text").style.display = "block";
     document.getElementById("logo").style.width = "60px";
