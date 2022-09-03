@@ -178,12 +178,38 @@ document
     }
   });
 
-second_flag = false;
-function the_brand() {
-  if (second_flag == false) {
-    document.getElementById("the_brand_image").style.display = "none";
+// second_flag = false;
+// function the_brand() {
+//   if (second_flag == false) {
+//     document.getElementById("the_brand_image2").style.display = "none";
+//   } else {
+//     document.getElementById("the_brand_image2").style.display = "block";
+//   }
+//   second_flag = !second_flag;
+// }
+
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar-fixed-top");
+    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+  });
+});
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("the_brand_image2").style.display = "none";
+    document.getElementById("the_brand_text").style.display = "block";
+    document.getElementById("logo").style.width = "60px";
+    document.getElementById("the_brand_image").style.width = "35px";
   } else {
-    document.getElementById("the_brand_image").style.display = "block";
+    document.getElementById("the_brand_image2").style.display = "block";
+    document.getElementById("the_brand_text").style.display = "none";
+    document.getElementById("logo").style.width = "125px";
+    document.getElementById("the_brand_image").style.width = "125px";
+    console.log("heeheheh");
   }
-  second_flag = !second_flag;
 }

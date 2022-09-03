@@ -273,7 +273,10 @@
         display: block;
         position: absolute; /* or absolute */
         left: 42%;
-        
+   }
+
+   .the_welcom {
+    margin-right: 2%;
    }
 }
 
@@ -291,13 +294,20 @@
         left: 39%;
         
    }
+
+   .the_welcom {
+    margin-left: 2%;
+   }
 }
 
 @media (max-width: 450px) {
 
     .navbar-brand2 {
         left: 38%;
-        
+   }
+
+   .the_welcom {
+    margin-left: 5%;
    }
 }
 
@@ -313,7 +323,10 @@
 
     .navbar-brand2 {
         left: 35%;
-        
+   }
+
+   .the_welcom {
+    margin-left: 20%;
    }
 }
 

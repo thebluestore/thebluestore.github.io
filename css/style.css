@@ -271,14 +271,14 @@ button {
      /* float: right; */
      /* background: #fff; */
      /* clear: both; */
-     padding: 23px 25px !important;
-     border-radius: 64px;
+     /* padding: 23px 25px !important; */
+     border-radius: 0px;
      min-width: 100% !important;
 }
 
 .navigation.navbar-dark .navbar-nav .nav-link {
      padding: 0 20px;
-     color: #070404;
+     color: white;
      font-size: 17px;
      line-height: 20px;
      font-weight: 500;
@@ -323,7 +323,7 @@ button {
      background: transparent;
      position: absolute;
      z-index: 999;
-     border-top: rgb(28,56,114) solid 5px;
+     /* border-top: rgb(28,56,114) solid 5px; */
 }
 
 
@@ -437,7 +437,7 @@ button {
      font-size: 17px;
      background-color: transparent;
      border: #ffffff solid 2px;
-     color: #1a1a1a;
+     color: white;
      padding: 15px 0px;
      width: 100%;
      max-width: 222px;
@@ -465,7 +465,7 @@ button {
 
 .about .about_img {
      margin-left: -40px;
-     border: rgb(28,56,114) solid 2px;
+     /* border: rgb(28,56,114) solid 2px; */
 }
 
 .about .titlepage::before {
@@ -537,7 +537,8 @@ button {
 }
 
 .blu {
-     color: rgb(28,56,114);
+     /* color: rgb(28,56,114); */
+     color: white;
      text-transform: initial;
 }
 
@@ -545,7 +546,7 @@ button {
      text-align: center;
      border: rgb(28,56,114) solid 1px;
      border-radius: 2px;
-     padding: 120px 0px 30px 0px;
+     padding: 50px 0px 30px 0px;
      margin-bottom: 30px;
 }
 
@@ -568,7 +569,7 @@ button {
 }
 
 .glasses .read_more {
-     border: #1a1a1a solid 2px;
+     /* border: #1a1a1a solid 2px; */
      font-weight: 500;
      display: block;
      margin: 0 auto;
@@ -824,8 +825,7 @@ ul.location_icon li {
      color: #fff;
      text-align: center;
      padding: 0 40px;
-     padding-bottom: 0px !important;
-     margin-bottom: 0px;
+     margin-bottom: 30px;
 }
 
 ul.location_icon li a {
@@ -928,6 +928,7 @@ input[type=text], select, textarea {
 }
 
 .navbar-brand2 {
+     margin-top: 5px;
      display: none;
 }
 
@@ -935,23 +936,210 @@ input[type=text], select, textarea {
      padding-top: 16px;
 }
 
+#hero {
+     width: 100%;
+     height: 100vh;
+     background: url(../images/macbook-pro-and-iphone-apple-products.jpg) top center;
+     animation: animat duration timing-function delay iteration-count direction fill-mode;
+     background-size: cover;
+     position: relative;
+     opacity: 0.9;
+   }
+#hero:before {
+     content: "";
+     background: rgba(0, 0, 0, 0.6);
+     position: absolute;
+     bottom: 0;
+     top: 0;
+     left: 0;
+     right: 0;
+   }
+#hero .container {
+     position: relative;
+     padding-top: 74px;
+     text-align: center;
+   }
+#hero h1 {
+     margin: 0;
+     font-size: 56px;
+     font-weight: 700;
+     line-height: 64px;
+     color: #fff;
+     font-family: "Poppins", sans-serif;
+   }
+#hero h1 span {
+     color: rgb(28,56,114);
+   }
+#hero h2 {
+     color: rgba(255, 255, 255, 0.9);
+     margin: 10px 0 0 0;
+     font-size: 24px;
+   }
+#hero .icon-box {
+     padding: 30px 20px;
+     transition: ease-in-out 0.3s;
+     border: 1px solid rgba(255, 255, 255, 0.3);
+     height: 100%;
+     text-align: center;
+   }
+#hero .icon-box i {
+     font-size: 32px;
+     line-height: 1;
+     color: rgb(28,56,114);
+   }
+#hero .icon-box h3 {
+     font-weight: 700;
+     margin: 10px 0 0 0;
+     padding: 0;
+     line-height: 1;
+     font-size: 20px;
+     line-height: 26px;
+   }
+#hero .icon-box h3 a {
+     color: #fff;
+     transition: ease-in-out 0.3s;
+   }
+#hero .icon-box h3 a:hover {
+     color: rgb(28,56,114);
+   }
+#hero .icon-box:hover {
+     border-color: rgb(28,56,114);
+   }
+   @media (min-width: 1024px) {
+     #hero {
+       background-attachment: fixed;
+     }
+   }
+   @media (max-width: 768px) {
+     /* #hero {
+       height: auto;
+     } */
+     #hero h1 {
+       font-size: 28px;
+       line-height: 36px;
+     }
+     #hero h2 {
+       font-size: 20px;
+       line-height: 24px;
+     }
+
+     .the_welcom {
+          margin-top: 150px !important;
+     }
+
+     .read_more {
+          width: 40%;
+     }
+     
+     .welcome_text {
+          font-size: 35px !important;
+     }
+   }
+
+.the_welcom {
+     margin-top: 200px;
+     margin-right: 8%;
+}
+
+.welcome_text {
+     font-size: 50px;
+}
+
+.read_more2 {
+     color: white;
+     font-size: 30px;
+}
+
+.blu2 {
+     color: rgb(28,56,114);
+}
+
+.navbar-fixed-top.scrolled {
+     background-color: rgb(28,56,114) !important;
+     
+     transition: background-color 200ms linear;
+   }
+
+#brand_text {
+     color: white;
+}
+
+/* .counter {
+     display: hide !important;
+} */
+
+#navbar {
+     transition: 0.4s;
+   }
+
+#navbar #logo {
+     width: 125px;
+     transition: 0.4s;
+}
+
+#the_brand_image, #the_brand_image2 {
+     width: 90px;
+     transition: 0.4s;
+}
+
+.bankak {
+     border: 2px solid #d4af37;
+     border-radius: 5px;
+     background-color: rgb(28,56,114);
+     padding-top: 30px;
+     padding-bottom: 30px;
+}
+
+/* .container-fluid {
+     padding-left: 0px !important;
+     padding-right: 0px !important;
+} */
+
+.bankak-titlepage {
+     color: white;
+}
+
+.bankak-title{
+     color: rgb(28,56,114);
+     font-size: 40px;
+}
+
+.bankak-writing {
+     color: white;
+     font-size: 20px;
+}
+
+.arabic-title-div {
+     text-align: center;
+}
+
+.payment {
+     padding-top: 30px !important;
+}
+
+.Visits_Count {
+     color: white;
+     font-family: 'Poppins', sans-serif;
+     font-size: 15px;
+ }
+
 .counter {
      position: relative;
      bottom: 28px;
 }
 
-.aligned {
-     text-align: center;
-     display: flex;
-     align-items: center;
-     justify-content: center
- }
+.glasses2 {
+     border-color: white !important;
+}
 
- .Visits_Count {
+#the_brand_text {
+     padding-top: 5px;
      color: white;
-     font-family: 'Poppins', sans-serif;
-     font-size: 15px;
- }
- /* span {
-     padding: 10px;
- } */
+     display: none;
+     transition: 0.4s;
+     font-family: 'Roboto', sans-serif;
+}
+
+#the_brand_image2 {
+     display: block;
+}

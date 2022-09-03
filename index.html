@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-X7GVWEM0RX"></script>
-      <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-X7GVWEM0RX');
-      </script>
-
       <!-- basic -->
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -53,7 +42,7 @@
          <!-- header inner -->
          <div class="header">
             <div class="container-fluid">
-               <nav class="navigation custom-navbar navbar navbar-expand-md navbar-dark" data-spy="affix" data-offset-top="10">
+               <nav id="navbar" class="navigation navbar navbar-expand-md navbar-dark fixed-top navbar-fixed-top" data-spy="affix" data-offset-top="10">
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="the_brand()">
                      <span class="navbar-toggler-icon"></span>
                   </button>
@@ -79,7 +68,8 @@
                           </li>
                       </ul>
                       <a class="navbar-brand m-auto" href="#">
-                          <img src="images/the_blue_logo.png" class="brand-img" alt="">
+                          <img src="images/logo.png" class="brand-img" id = "logo" alt="">
+                          <!-- <h1 id = "brand_text">The blue store</h1> -->
                       </a>
                       <ul class="navbar-nav navbar-background">
                           <li><a id ="arabic_button" onclick="makeArabic()" class="nav-link scrollto english" href="#">عربي</a></li>
@@ -99,22 +89,25 @@
                           </li>
 
                           <li class="nav-item" dir = "rtl">
-                           <a class="nav-link arabic arabic_direction" href="#contact" >للتواصل</a>
+                           <a class="nav-link arabic arabic_direction" href="#contact" id = "logo">للتواصل</a>
                           </li>
          
                       </ul>
                   </div>
-                  <a class="navbar-brand2" href="#">
-                     <img src="images/the_blue_logo.png" class="brand-img" id = "the_brand_image" alt="">
-                  </a>
+                  <!-- <div id = "navbar"> -->
+                     <a class="navbar-brand2" href="#">
+                        <img src="images/logo.png" class="brand-img" id = "the_brand_image2" alt="">
+                        <h4 class = "brand-img" id = "the_brand_text">The Blue Store</h4>
+                     </a>
+                  <!-- </div> -->
               </nav>
          </div>
       </header>
       <!-- end header inner -->
       <!-- end header -->
       <!-- banner -->
-      <section class="banner_main" id = "home">
-         <div id="banner1" class="carousel slide" data-ride="carousel">
+      <section id="hero">
+         <!-- <div id="banner1" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                <li data-target="#banner1" data-slide-to="0" class="active"></li>
                <li data-target="#banner1" data-slide-to="1"></li>
@@ -147,17 +140,6 @@
                      </div>
                   </div>
                </div>
-               <!-- <div class="carousel-item">
-                  <div class="container">
-                     <div class="carousel-caption">
-                        <div class="text-bg">
-                           <h1> <span class="blu">Welcome <br></span>To Our Sunglasses</h1>
-                           <figure><img src="images/banner_img.png" alt="#"/></figure>
-                           <a class="read_more" href="#">Shop Now</a>
-                        </div>
-                     </div>
-                  </div>
-               </div> -->
             </div>
             <a class="carousel-control-prev" href="#banner1" role="button" data-slide="prev">
             <i class="fa fa-arrow-left" aria-hidden="true"></i>
@@ -165,6 +147,19 @@
             <a class="carousel-control-next" href="#banner1" role="button" data-slide="next">
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
             </a>
+         </div> -->
+         <div class="container" data-aos="fade-up">
+
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+               <div class="col-xl-6 col-lg-8">
+                  <div class = "the_welcom">
+                     <h1 class = "english">Welcome <br>To the Blue Store</h1>
+                     <h1 class = "arabic welcome_text">مرحبا بك في متجرنا</h1>
+                     <a class="read_more english" href="#">Shop now</a>
+                     <a class="read_more arabic" href="#">التسوق</a>
+                  </div>
+               </div>
+            </div>
          </div>
       </section>
       <!-- end banner -->
@@ -209,199 +204,170 @@
                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                   <div class="glasses_box">
                      <figure><img src="images/iphone13.png" alt="#"/></figure>
-                     <h3><span class="blu">Iphone13 pro max</span></h3>
+                     <h3><span class="blu2">Iphone13 pro max</span></h3>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                   <div class="glasses_box">
                      <figure><img src="images/iphonexsmax.jpg" alt="#"/></figure>
-                     <h3><span class="blu">IphoneX</span></h3>
+                     <h3><span class="blu2">IphoneX</span></h3>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                   <div class="glasses_box">
                      <figure><img src="images/iphonex.png" alt="#"/></figure>
-                     <h3><span class="blu">Iphonex 64 & 256GB</span></h3>
+                     <h3><span class="blu2">Iphonex 64 & 256GB</span></h3>
                      
                   </div>
                </div>
                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                   <div class="glasses_box">
                      <figure><img src="images/iphone12_max_pro.jpg" alt="#"/></figure>
-                     <h3><span class="blu">Iphone 12 pro max</span></h3>
+                     <h3><span class="blu2">Iphone 12 pro max</span></h3>
                      
                   </div>
                </div>
                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                   <div class="glasses_box">
                      <figure><img src="images/iphone11.jpg" alt="#"/></figure>
-                     <h3><span class="blu">Iphone 11 pro max</span></h3>
+                     <h3><span class="blu2">Iphone 11 pro max</span></h3>
                      
                   </div>
                </div>
                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                   <div class="glasses_box">
                      <figure><img src="images/sandisk.jpg" alt="#"/></figure>
-                     <h3><span class="blu">sandisk</span></h3>
+                     <h3><span class="blu2">sandisk</span></h3>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                   <div class="glasses_box">
                      <figure><img src="images/usbcadbter.png" alt="#"/></figure>
-                     <h3><span class="blu">USB power adapter</span></h3>
+                     <h3><span class="blu2">USB power adapter</span></h3>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                   <div class="glasses_box">
                      <figure><img src="images/screenprotectors.png" alt="#"/></figure>
-                     <h3><span class="blu">screen protectors</span></h3>
+                     <h3><span class="blu2">screen protectors</span></h3>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                   <div class="glasses_box">
                      <figure><img src="images/smartpen.png" alt="#"/></figure>
-                     <h3><span class="blu">Apple smart pen</span></h3>
+                     <h3><span class="blu2">Apple smart pen</span></h3>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                   <div class="glasses_box">
                      <figure><img src="images/earpods.png" alt="#"/></figure>
-                     <h3><span class="blu">Apple ear pods</span></h3>
+                     <h3><span class="blu2">Apple ear pods</span></h3>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                   <div class="glasses_box">
                      <figure><img src="images/lens_protection.jpg" alt="#"/></figure>
-                     <h3><span class="blu">lenses protection</span></h3>
+                     <h3><span class="blu2">lenses protection</span></h3>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                   <div class="glasses_box">
                      <figure><img src="images/anker.jpg" alt="#"/></figure>
-                     <h3><span class="blu">Anker</span></h3>
+                     <h3><span class="blu2">Anker</span></h3>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                   <div class="glasses_box">
                      <figure><img src="images/iphone_battreries.png" alt="#"/></figure>
-                     <h3><span class="blu">iphone battreries</span></h3>
+                     <h3><span class="blu2">iphone battreries</span></h3>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                   <div class="glasses_box">
                      <figure><img src="images/gift_cards.png" alt="#"/></figure>
-                     <h3><span class="blu">Gift cards</span></h3>
+                     <h3><span class="blu2">Gift cards</span></h3>
                   </div>
                </div>
-               <div class="col-md-12">
+               <!-- <div class="col-md-12">
                   <a class="read_more english" href="#">Shop now</a>
                   <a class="read_more arabic" href="#">التسوق</a>
+               </div> -->
+            </div>
+            </div>
+         </div>
+      </div>
+      <div class="about payment" id = "about">
+         <div class="container">
+            <div class = "arabic-title-div">
+               <h2 class = "arabic bankak-title">الدفع الآمن</h2>
+            </div>
+            <div class="row d_flex">
+               <div class="col-md-5">
+                  <div class="about_img">
+                     <figure><img src="images/bankak.png" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-7 bankak">
+                  <div class="bankak-titlepage english">
+                     <h2 class = "bankak-title">About Our Shop</h2>
+                     <p class = "bankak-text">We in Blue Store are specialized in iPhones, mobile accessories, headphones, watches, all electronics, game cards, all internet cards and digital stores. The store has been established since 2019 and the store is located in Khartoum / Omak Street.</p>
+                  </div>
+                  <div class=" arabic">
+                     <p class = "bankak-writing arabic_direction">تسوق اونلاين وادفع عبر تطبيق بنكك أو عن طريق رقم البطاقة إذا كان لديك حساب في بنك آخر ، واستلم عند الدفع مباشره ً</p>
+                  </div>
+                  <!-- <a class="read_more" href="#">Read More</a> -->
                </div>
             </div>
          </div>
       </div>
-      <!-- end Our  Glasses section -->
-      <!-- Our shop section -->
-      <!-- <div id="about" class="shop">
-         <div class="container-fluid">
-            <div class="row">
-               <div class="col-md-5">
-                  <div  class="shop_img">
-                     <figure><img src="images/shop_img.png" alt="#"/></figure>
-                  </div>
-               </div>
-               <div class="col-md-7 padding_right0">
-                  <div class="max_width">
-                     <div class="titlepage">
-                        <h2>Best SunGlasses  At Our shop</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-                        <a class="read_more" href="#">Shop Now</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div> -->
-      <!-- end Our shop section -->
-      <!-- clients section -->
-      <!-- <div class="clients">
+      <div class="glasses glasses2" id = "products">
          <div class="container">
             <div class="row">
-               <div class="col-md-12">
+               <div class="col-md-10 offset-md-1">
                   <div class="titlepage">
-                     <h2>What say our clients</h2>
-                     <p>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut la</p>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-12">
-                  <div id="myCarousel" class="carousel slide clients_Carousel " data-ride="carousel">
-                     <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                     </ol>
-                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                           <div class="container">
-                              <div class="carousel-caption ">
-                                 <div class="row">
-                                    <div class="col-md-12">
-                                       <div class="clients_box">
-                                          <figure><img src="images/our.png" alt="#"/></figure>
-                                          <h3>Sandy Mark</h3>
-                                          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact  a more-or-less normal distribution of letters,</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="carousel-item">
-                           <div class="container">
-                              <div class="carousel-caption">
-                                 <div class="row">
-                                    <div class="col-md-12">
-                                       <div class="clients_box">
-                                          <figure><img src="images/our.png" alt="#"/></figure>
-                                          <h3>Sandy Mark</h3>
-                                          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact  a more-or-less normal distribution of letters,</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="carousel-item">
-                           <div class="container">
-                              <div class="carousel-caption">
-                                 <div class="row">
-                                    <div class="col-md-12">
-                                       <div class="clients_box">
-                                          <figure><img src="images/our.png" alt="#"/></figure>
-                                          <h3>Sandy Mark</h3>
-                                          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact  a more-or-less normal distribution of letters,</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                     <i class='fa fa-angle-left'></i>
-                     </a>
-                     <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                     <i class='fa fa-angle-right'></i>
-                     </a>
+                     <h2 class = "english">Gift Cards</h2>
+                     <h2 class = "arabic">الكروت الإلكترونية</h2>
+                     <p class = "arabic">الان مع بلو إستور يمكنك الحصول على جميع بطاقاتك الإلكترونية وجميع بطاقات الالعاب وشحن جميع الحسابات العالمية  بإسهل وأءمن الطرق ، مع إمكانية الدفع اونلاين .</p>
+                     <p class = "english">Now with Blue, you can get all your electronic cards and game cards and charge all international accounts in the easiest and safest way, with the ability to pay online.</p>
                   </div>
                </div>
             </div>
          </div>
-      </div> -->
-      <!-- end clients section -->
-      <!-- contact section -->
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="glasses_box">
+                     <figure><img src="images/ps.jpg" alt="#"/></figure>
+                     <h3><span class="blu2">Ps Cards</span></h3>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="glasses_box">
+                     <figure><img src="images/pubg.jpg" alt="#"/></figure>
+                     <h3><span class="blu2">Pubg</span></h3>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="glasses_box">
+                     <figure><img src="images/netflix.jpg" alt="#"/></figure>
+                     <h3><span class="blu2">Netflix</span></h3>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="glasses_box">
+                     <figure><img src="images/itunes.jpg" alt="#"/></figure>
+                     <h3><span class="blu2">Itunes</span></h3>
+                  </div>
+               </div>
+               <!-- <div class="col-md-12">
+                  <a class="read_more english" href="#">Shop now</a>
+                  <a class="read_more arabic" href="#">التسوق</a>
+               </div> -->
+            </div>
+            </div>
+         </div>
+      </div>
+      <!-- ###################################### -->
       <div id="contact" class="contact_ container-fluid text-light wow fadeIn">
          <div class="row the_contact">
              <div class="col-lg-6">
