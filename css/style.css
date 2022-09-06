@@ -1152,3 +1152,7 @@ input[type=text], select, textarea {
      transition: all 0.2s linear 0s;
 }
 
+.rights {
+     text-align: center;
+     font-size: 10px;
+}
